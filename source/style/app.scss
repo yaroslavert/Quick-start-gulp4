@@ -1,0 +1,9 @@
+@import "vendor/vendor";
+body {
+  margin: 0;
+  background: #eee
+}
+.flex{
+  display: flex;
+}
+@import 'common/greating';
