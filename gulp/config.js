@@ -10,5 +10,7 @@ module.exports={
     pugInput            : './source/template/pages/*.*',
     pugOutput           : root,
     svgInput            : './source/svg/*.svg',
-    svgOutput           : root+'/assets/sprite'
+    svgOutput           : root+'/assets/sprite',
+    fontsInput          : './source/fonts/**/*.*',
+    fontsOutput         : root+'/assets/fonts' 
 };
