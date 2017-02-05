@@ -1,7 +1,7 @@
 module.exports = [
     './gulp/tasks/sass',
     './gulp/tasks/clean',
-    './gulp/tasks/css.foundation',
+    './gulp/tasks/libCss',
     './gulp/tasks/img',
     './gulp/tasks/js',
     './gulp/tasks/pug',
@@ -9,5 +9,6 @@ module.exports = [
     './gulp/tasks/wathc',
     './gulp/tasks/fonts',
     './gulp/tasks/svg',
-    './gulp/tasks/zip'
+    './gulp/tasks/zip',
+    './gulp/tasks/libJs'
 ];

@@ -7,6 +7,6 @@ module.exports = function() {
             server: root
         });
 
-        $.browserSync.watch([$.config.root + '/**/*.*', '!**/*.css'], $.browserSync.reload);
+        $.browserSync.watch([root + '/**/*.*', '!**/*.css'], $.browserSync.reload);
     });
 };

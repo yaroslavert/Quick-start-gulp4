@@ -7,7 +7,8 @@ global.$={
     config      : require('./gulp/config'),
     path : {
         task            : require('./gulp/path/task'),
-        cssFoundation   : require('./gulp/path/css.foundation')
+        cssFoundation   : require('./gulp/path/css.foundation'),
+        jsFoundation    : require('./gulp/path/js.foundation')
     },
     gulp        : require('gulp'),
     rimraf      : require('rimraf'),
@@ -23,10 +24,11 @@ $.path.task.forEach(function (taskpath) {
 $.gulp.task('default',$.gulp.series(
 
     'clean',
+    'libCss',
+    'libJs',
     $.gulp.parallel(
-        'css:foundation',
         'sass',
-        'copy:image',
+        'img',
         'js',
         'svg',
         'pug'
