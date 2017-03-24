@@ -1,5 +1,5 @@
 module.exports =  function () {
   $.gulp.task('clean',function (cb) {
-     return $.rimraf(root,cb);
+     return $.rimraf($.config.root,cb);
   });
 };

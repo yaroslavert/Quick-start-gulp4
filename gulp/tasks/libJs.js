@@ -4,6 +4,6 @@ module.exports=function () {
         return $.gulp.src($.path.jsFoundation)
             .pipe($.gl.concat('lib.js'))
             .pipe($.gl.uglify())
-            .pipe($.gulp.dest($.config.jsFoundation))
+            .pipe($.gulp.dest('./source/js/vendor'))
     });
 };
